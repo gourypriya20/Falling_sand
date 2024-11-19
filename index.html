@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Falling Sand</title>
+  <style>
+    /* Center the sketch and text container horizontally */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Ensure full viewport height */
+      margin: 0;
+      background-color: black;
+    }
+
+    /* Style the text container */
+    #text-container {
+        font-family: Courier New;
+        flex: 0 0 40%; /* Allow up to 30% width for text */
+        padding: 20px;
+        text-align: right; /* Align text within the container */
+        color: white;
+    }
+
+    h1, p {
+      margin: 0; /* Remove default margin for cleaner layout */
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+</head>
+<body>
+  <div id="text-container">
+    <h1>Falling Sand</h1>
+    <p>Move cursor to simulate sand falling down</p>
+    <br/>
+    <button id="clearButton" onclick="clearGrid()" style="font-family: Courier New; font-weight:4px">Clear Grid</button>
+</div>
+  <script src="./falling_sand.js"></script>
+</body>
+</html>
