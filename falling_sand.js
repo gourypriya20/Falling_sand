@@ -36,6 +36,9 @@ function clearGrid() {
     }
   }
 
+function exportGridAsPNG() {
+    saveCanvas("falling_sand_grid", "png");
+}
 //Developing the window for sand falling
 function setup(){
     createCanvas(550,550);
