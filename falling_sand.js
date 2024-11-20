@@ -50,7 +50,7 @@ function setup(){
 function mouseMoved(){
     let col = floor(mouseX / w);
     let row = floor(mouseY / w);
-    if (withinCols(col) && withinRows(row)){
+    if (withinCols(col) && withinRows(row) && grid[col][row]===0){
         //gives huevalue to each sand granule generated
         grid[col][row] = hueValue;
     }
